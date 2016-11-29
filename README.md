@@ -1,3 +1,4 @@
+<div align="center"><img width="150px" src="img/ico.png" /></div>
 # PokemonBot
 
 This is a Pokémon Bot for Discord, created with the Discord.js API
