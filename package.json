@@ -1,0 +1,16 @@
+{
+  "name": "PokemonBot",
+  "version": "0.0.1",
+  "description": "A Pokemon multi-bot",
+  "main": "pokemonBot.js",
+  "license": "ISC",
+  "dependencies": {
+    "discord.js": "github:hydrabolt/discord.js#indev"
+  },
+  "engines": {
+    "node": "6.1.0"
+  },
+  "devDependencies": {
+    "ytdl-core": "^0.7.19"
+  }
+}
