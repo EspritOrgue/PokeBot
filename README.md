@@ -11,6 +11,7 @@ This is a Pokémon Bot for Discord, created with the Discord.js API
 * __License__: ISC
 
 ## Commands
+:warning: **The commands may change with times.**
 
 __Command__|__Name__|__Description__
 :--:|:--:|:--:
