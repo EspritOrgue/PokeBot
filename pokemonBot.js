@@ -39,11 +39,20 @@ bot.on("message", msg => {
 		var pkmn = msg.content.toString().toLowerCase();
 		pkmn = pkmn.substring(9);
 		for(var i=0;i<pokemon.length;i++){
-			if(pkmn == pokemon[i]._engName.toLowerCase() || pkmn == pokemon[i]._frName.toLowerCase()){
-				var text = "__You selected:__\n";
+			if(pkmn == pokemon[i]._engName.toLowerCase() || pkmn == pokemon[i]._frName.toLowerCase() || pkmn == pokemon[i]._nb){
+				var text = "__You selected__\n";
+				text += "**N° "+pokemon[i]._nb+"** \n";
 				text += "English name: **"+pokemon[i]._engName+"** \n";
 	 			text += "French name: **"+pokemon[i]._frName+"** \n";
-				text += "Type: **"+pokemon[i]._type+" "+pokemon[i]._type2+"**";
+				text += "Type: **"+pokemon[i]._type+" "+pokemon[i]._type2+"**\n";
+				text += "Catch Ratio: **"+pokemon[i]._catchRate+"**\n\n";
+				text += "__Base Stats__\n";
+				text += "HP: **"+pokemon[i]._baseStats._hp+"**\n";
+				text += "Atk: **"+pokemon[i]._baseStats._atk+"**\n";
+				text += "Def: **"+pokemon[i]._baseStats._def+"**\n";
+				text += "S. Atk: **"+pokemon[i]._baseStats._sAtk+"**\n";
+				text += "S. Def: **"+pokemon[i]._baseStats._sDef+"**\n";
+				text += "Spd: **"+pokemon[i]._baseStats._spd+"**";
 				msg.reply(text);
 			}
 		}
